@@ -44,7 +44,7 @@ $database = new Database();
                 <td><?php echo $val_cart_item['product_name'] ?></td>
 
                 <td><img src="template/image/<?php echo $val_cart_item['product_image'] ?>" alt="<?php echo $val_cart_item['product_name']?>" height="35px" width="auto" title="<?php echo $val_cart_item['product_name'] ?>"></td>
-                <td><?php echo number_format($val_cart_item['price'],0,",",".")."$" ?></td>
+                <td><?php echo number_format($val_cart_item['price'],0,",",".")."VND" ?></td>
                 <td><?php echo abs($val_cart_item['quantity']) ?></td>
                 <td><?php echo number_format(($sum = $val_cart_item['price'] * $val_cart_item['quantity']),0,",",".")."$";?></td>
                 <td>
